@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden.
+  </div>
+
+  <script>
+    // Incorrect attempt to hide the div
+    document.getElementById("myDiv").style.visibility = "hidden"; 
+    //The correct method is to use display:none;
+  </script>
+</body>
+</html>
